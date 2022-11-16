@@ -1,0 +1,22 @@
+/*Estilos Footer*/
+
+footer{
+    margin-top: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+footer {
+    div {
+        ul {
+            li{
+                display: inline-block;
+            }
+        }
+    }
+}   

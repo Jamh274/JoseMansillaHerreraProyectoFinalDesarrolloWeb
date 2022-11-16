@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/*Estilos Body*/
+.just {
+  text-align: justify; }
+
+html {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
+.b-color {
+  background-color: #010129; }
+
+/*Estilos Navbar*/
+nav {
+  background: #0724c3;
+  background: linear-gradient(90deg, #0724c3 20%, #79091e 75%); }
+
+.navbar-toggler {
+  border: solid black; }
+
+/*Estilos Header*/
+.header-e {
+  margin-bottom: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  text-align: center;
+  border: solid; }
+
+.b-header {
+  background-color: black; }
+
+/*Estilos Index*/
+.texto-i {
+  text-align: justify;
+  max-width: 400px;
+  color: white; }
+
+.tamaño-p {
+  max-width: 450px; }
+
+.pos-img {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.bordes {
+  border: solid .1em white; }
+
+/*Estilos Jugadores*/
+.texto-jugadores {
+  text-align: justify;
+  max-width: 300px; }
+
+/*Estilos Tienda*/
+.articulos-tienda {
+  max-width: 400px; }
+
+.img {
+  max-width: 310px; }
+
+.header-t {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  text-align: center;
+  border: solid; }
+
+/*Estilos Liga*/
+.texto-liga {
+  max-width: 600px;
+  text-align: justify; }
+
+main div table tr td {
+  color: white; }
+
+main div table tr th {
+  color: white; }
+
+/*Estilos Copa*/
+.texto-copa {
+  max-width: 600px;
+  text-align: justify; }
+
+/*Estilos Contacto*/
+.ubicacion {
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-around; }
+
+.mapa, .formulario {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.formulario {
+  background-color: white;
+  max-width: 310px;
+  border: solid;
+  font-weight: bold; }
+
+/*Grid Index*/
+.grid-i {
+  display: grid;
+  grid-template-areas: "a b c" "d e f"; }
+
+.a {
+  grid-area: a; }
+
+.b {
+  grid-area: b; }
+
+.c {
+  grid-area: c; }
+
+.d {
+  grid-area: d; }
+
+.e {
+  grid-area: e; }
+
+.f {
+  grid-area: f; }
+
+/*Grid Contactos*/
+.grid-c {
+  display: grid;
+  grid-template-areas: "g h"; }
+
+.g {
+  grid-area: g; }
+
+.h {
+  grid-area: h;
+  max-width: 500px; }
+
+/*Estilos Footer*/
+footer {
+  margin-top: auto; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black; }
+
+footer div ul li {
+  display: inline-block; }
+
+/*Media Queries*/
+@media only screen and (max-width: 576px) {
+  .grid-i {
+    display: grid;
+    grid-template-areas: "a" "b" "c" "d" "e" "f"; }
+  .texto-i {
+    text-align: justify;
+    max-width: 310px; } }
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .grid-i {
+    display: grid;
+    grid-template-areas: "a a" "b c" "d d" "e f"; } }
+
+@media only screen and (max-width: 768px) {
+  .grid-c {
+    display: grid;
+    grid-template-areas: "g" "h"; }
+  .ubicacion {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; } }
+
+@media only screen and (min-width: 992px) {
+  .trans {
+    transition: 2s;
+    transition-timing-function: ease-in-out; }
+    .trans:hover {
+      height: 310px;
+      width: 350px; } }
+
+@media only screen and (max-width: 992px) {
+  .bordes {
+    border: none; } }
